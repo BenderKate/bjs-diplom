@@ -57,7 +57,7 @@ const moneyManager = new MoneyManager();
    moneyManager.conversionMoneyCallback = function (data) {
        ApiConnector.convertMoney(data, callback => {
            if (callback.success) {
-               ProfileWidget.showProfile(fromAmount);
+               ProfileWidget.showProfile(data);
                moneyManager.setMessage(true, 'Успешно! Валюта конвертирована')
            } else {
                moneyManager.setMessage(false, 'Ошибка! Валюта не была конвертирована')
@@ -68,7 +68,7 @@ const moneyManager = new MoneyManager();
    moneyManager.sendMoneyCallback = function (data) {
        ApiConnector.transferMoney(data, callback => {
            if (callback.success) {
-               ProfileWidget.showProfile(amount);
+               ProfileWidget.showProfile(data);
                moneyManager.setMessage(true, 'Успешно! Перевод осуществлен')
            } else {
                moneyManager.setMessage(false, 'Ошибка! Перевод не был осуществлен')
