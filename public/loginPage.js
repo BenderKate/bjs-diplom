@@ -7,7 +7,7 @@ const userForm = new UserForm();
             if (response.success) {
                 location.reload();
             } else {
-                this.setLoginErrorMessage('Ошибка! Введенные логин или пароль не существуют');
+                this.setLoginErrorMessage(response.error);
             }
         })
     }
@@ -17,7 +17,7 @@ const userForm = new UserForm();
             if (response.success) {
                 location.reload();
             } else {
-                this.setRegisterErrorMessage('Ошибка! Введенные данные некорректны');
+                this.setRegisterErrorMessage(response.error);
             }
         })
     }
