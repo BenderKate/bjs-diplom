@@ -6,7 +6,7 @@
       "password": "demo",
       "id": 1,
       "balance": {
-        "RUB": 1690,
+        "RUB": 1620,
         "USD": 20,
         "EUR": 40447.01173001805,
         "NTC": 3480.8663287779264
@@ -19,7 +19,7 @@
       "id": 2,
       "netocoins": 100,
       "balance": {
-        "RUB": 20,
+        "RUB": 90,
         "USD": 0,
         "EUR": 0,
         "NTC": 100

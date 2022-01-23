@@ -85,7 +85,7 @@ const favoritesWidget = new FavoritesWidget();
         if (response.success) {
             favoritesWidget.clearTable();
             favoritesWidget.fillTable(response.data);
-            moneyManager.updateUserList(response.data); 
+            moneyManager.updateUsersList(response.data); 
         }       
     })
 
@@ -94,7 +94,7 @@ const favoritesWidget = new FavoritesWidget();
         if (response.success) {
             favoritesWidget.clearTable();
             favoritesWidget.fillTable(response.data);
-            moneyManager.updateUserList(response.data);
+            moneyManager.updateUsersList(response.data);
             favoritesWidget.setMessage(true, 'Успешно! Пользователь добавлен в список избранных')
         } else {
             favoritesWidget.setMessage(false, response.error)
@@ -107,7 +107,7 @@ const favoritesWidget = new FavoritesWidget();
         if (response.success) {
             favoritesWidget.clearTable();
             favoritesWidget.fillTable(response.data);
-            moneyManager.updateUserList(response.data);
+            moneyManager.updateUsersList(response.data);
             favoritesWidget.setMessage(true, 'Успешно! Пользователь удален из списка избранных')
         } else {
             favoritesWidget.setMessage(false, response.error)
